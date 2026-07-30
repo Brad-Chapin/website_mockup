@@ -6,6 +6,7 @@ body {
 .top-block {
     display: flex;
     flex-direction: column;
+    background-color: darkgray;
 }
 
 .header {
@@ -27,18 +28,17 @@ body {
     align-items: center;
 }
 
-.links {
+.links-wrapper {
     align-items: center;
     justify-content: flex-end;
     flex:1;
 }
 
-ul {
+.links {
     margin-right: 150px;
     display: flex;
     align-items: center;
     gap:40px;
-    list-style-type: none;
     justify-content: flex-end;
     width:auto;
 }
@@ -46,6 +46,12 @@ ul {
 a {
     text-decoration: none;
 }
+
+ul {
+    list-style-type: none;
+}
+
+
 
 .hero {
     display: flex;
@@ -59,18 +65,17 @@ a {
 
 .left-top {
     font-size: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
 }
 
 .left-bottom {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 20px;
 }
 
 .hero-image {
     margin-right: 150px;
-    justify-content: flex-end;
     height:200px;
     width:400px;
     background-color: gray;
@@ -79,4 +84,44 @@ a {
 button {
     width:80px;
     height:30px;
+}
+
+.middle-block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: lightseagreen;
+    justify-content: center;
+}
+
+.cards {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0;
+    margin-top:20px;
+    gap: 40px;
+}
+
+.card {
+    height:150px;
+    width:150px;
+    background-color:coral;
+    gap:20px;
+}
+
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding:0;
+    margin-top:20px;
+    margin-bottom: 20px;
+    gap:20px;
+}
+
+.text li {
+    flex:0 0 150px;
+    text-align: left;
 }
