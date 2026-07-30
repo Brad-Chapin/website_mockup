@@ -3,6 +3,7 @@ body {
     flex-direction: column;
     box-sizing: border-box;
     min-height: 100vh;
+    font-family: roboto,sans-serif;
 }
 
 .top-block {
@@ -32,6 +33,11 @@ body {
 
 }
 
+.logo-image {
+    height:60px;
+    width: 60px;
+}
+
 .links-wrapper {
     align-items: center;
     justify-content: flex-end;
@@ -50,6 +56,10 @@ body {
 a {
     text-decoration: none;
     color:#E5E7EB;
+}
+
+.quote-link {
+    color:black;
 }
 
 ul {
@@ -85,12 +95,16 @@ ul {
 .hero-image {
     margin-right: 150px;
     margin-bottom: 100px;
-    height:250px;
-    width:500px;
     background-color: gray;
 }
 
+.hero-pic {
+    width:250px;
+    height:250px;
+}
+
 button {
+    align-items: center;
     background-color: blue;
     color:white;
     border-radius: 10px;
@@ -122,12 +136,13 @@ button {
 }
 
 .card {
-    border-radius: 10px;
-    border:3px solid blue;
+    gap:20px;
+}
+
+.icon {
     height:150px;
     width:150px;
-    background-color:white;
-    gap:20px;
+
 }
 
 .text {
