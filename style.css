@@ -1,12 +1,14 @@
 body {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
+    min-height: 100vh;
 }
 
 .top-block {
     display: flex;
     flex-direction: column;
-    background-color: darkgray;
+    background-color: #1F2937;
 }
 
 .header {
@@ -26,6 +28,8 @@ body {
     width:auto;
     justify-content: center;
     align-items: center;
+    color:#E5E7EB
+
 }
 
 .links-wrapper {
@@ -45,6 +49,7 @@ body {
 
 a {
     text-decoration: none;
+    color:#E5E7EB;
 }
 
 ul {
@@ -66,12 +71,15 @@ ul {
 .left-top {
     font-size: 50px;
     margin-bottom: 30px;
+    color:#E5E7EB;
+
 
 }
 
 .left-bottom {
     margin-bottom: 30px;
     font-size: 20px;
+    color:#E5E7EB;
 }
 
 .hero-image {
@@ -83,6 +91,9 @@ ul {
 }
 
 button {
+    background-color: blue;
+    color:white;
+    border-radius: 10px;
     width:140px;
     height:40px;
 }
@@ -91,13 +102,12 @@ button {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: lightseagreen;
     justify-content: center;
 }
 
 .middle-title {
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
     margin-top: 60px;
 }
 
@@ -112,9 +122,11 @@ button {
 }
 
 .card {
+    border-radius: 10px;
+    border:3px solid blue;
     height:150px;
     width:150px;
-    background-color:coral;
+    background-color:white;
     gap:20px;
 }
 
@@ -148,6 +160,7 @@ button {
     padding-right: 350px;
     padding-top: 100px;
     font-size: 30px;
+    font-style: italic;
 }
 
 .signature {
@@ -164,30 +177,59 @@ button {
 }
 
 .call-block {
+    border-radius: 10px;
     margin-top: 100px;
     margin-bottom: 100px;
     width:1000px;
     height:200px;
-    background-color: aqua;
+    background-color:#3882F6;
     display: flex;
     justify-content: space-evenly;
     gap:100px;
 }
 
 .call {
-    padding-left: 80px;
     font-size: 20px;
     font-weight: 700;
+}
+
+.call, .call-sub {
+    align-self: flex-start;
+    color:#E5E7EB;
 }
 
 .call-text {
     display: flex;
     flex-direction: column;
     justify-content:center;
+    align-items: center;
 }
 
 .bottom-button {
     padding-right: 80px;
     display: flex;
     align-items: center;
+}
+
+.button2 {
+    border:3px solid white;
+    background-color: blue;
+    color: white;
+}
+
+.button1 {
+    border: none;
+}
+
+.footer {
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 200px;
+    flex-basis: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: black;
 }
